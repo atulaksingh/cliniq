@@ -4,7 +4,7 @@ function About() {
   return (
     <>
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 py-20 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 py-10 lg:py-20 bg-[#f5f8fb]">
           <div className="col-span-1">
             <h1 className="text-[46px] text-[#464646] font-[700]">
               <span class="normal text-[46px] text-[#464646] font-[400]">
@@ -25,7 +25,7 @@ function About() {
                 />
               </div>
               <div className="col-span-1">
-                <p className="text-[15px] text-[#999]">
+                <p className="text-[15px] text-[#999] leading-[1.75rem]">
                   {" "}
                   Our team of highly trained{" "}
                   <a className="text-[#56afd5]">professionals</a> uses the
@@ -47,28 +47,28 @@ function About() {
               </span>{" "}
               a Question
             </h1>
-            <div>
-              <form>
+            <div className="p-[35px] bg-white">
+              <form className="text-center">
                 <input
-                  className="w-[87%] my-5 md:w-[42%] bg-transparent p-3 border decoration-white mx-2"
+                  className="w-[87%] mt-5 md:w-[42%] bg-transparent p-3 border decoration-white mx-2"
                   placeholder="Full Name"
                   type="text"
                   required
                 />
                 <input
-                  className="w-[87%] md:w-[42%] bg-transparent p-3 border decoration-white mx-2"
+                  className="w-[87%] my-3 md:w-[42%] bg-transparent p-3 border decoration-white mx-2"
                   placeholder="Subject"
                   type="text"
                   required
                 />
                 <input
-                  className="w-[87%] md:w-[42%] bg-transparent p-3 border decoration-white mx-2"
+                  className="w-[87%] md:w-[42%] bg-transparent p-3 my-1 border decoration-white mx-2"
                   placeholder="Email"
                   type="email"
                   required
                 />
                 <input
-                  className="w-[87%] md:w-[42%] bg-transparent p-3 border decoration-white mx-2"
+                  className="w-[87%] md:w-[42%] bg-transparent p-3 my-1 border decoration-white mx-2"
                   placeholder="Phone no"
                   type="number"
                   required
@@ -79,9 +79,12 @@ function About() {
                   placeholder="Type your question..."
                   rows={6}
                 />
-                <div className="bg-[#a175aa] text-white text-[18.5px] font-[500] p-3 w-52 mx-auto  text-center rounded-full my-2 cursor-pointer">
+              <div className="w-full text-center">
+
+                <button className="bg-[#a175aa]  text-white text-[18.5px] font-[500] p-3 w-52 mx-auto  text-center rounded-full my-2 cursor-pointer">
                   Send Question
-                </div>
+                </button>
+              </div>
               </form>
             </div>
           </div>

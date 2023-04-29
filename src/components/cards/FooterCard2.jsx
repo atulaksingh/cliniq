@@ -4,7 +4,7 @@ function FooterCard2() {
   return (
     <>
       <div className="container mx-auto">
-        <div className="grid grid-cols-4 py-5 gap-10 px-12 ">
+        <div className="grid grid-cols-1 lg:grid-cols-4 py-5 gap-10 px-5 lg:px-12 ">
           <div className="col-span-1">
             <h1 className="text-[18px] font-[700] text-[#fff] pb-2">AboutUs</h1>
             <p className="text-[15px] text-[#c1c7ce] leading-[23px] py-3">

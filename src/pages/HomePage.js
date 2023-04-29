@@ -12,29 +12,31 @@ import Hero2 from '../components/Home/Hero2'
 import Team from '../components/Home/Team'
 import Latest from '../components/Home/Latest'
 import Map from '../components/Home/Map'
+import SmHeader from "../components/shared/SmHeader";
 function HomePage() {
   return (
     <>
       <div>
       
-        {/* <Header/> */}
-        {/* <Hero /> */}
-        <div className="px-[105px]">
+        <Header/>
+        {/* <SmHeader /> */}
+        <Hero />
+        <div className="px-5 lg:px-[105px]">
           <Offer />
           <About />
           <Advantages />
           <Team />
         </div>
         <Hero2 />
-        <div className="px-[105px]">
+        <div className="px-5 lg:px-[105px]">
           <Latest />
         </div>
         <Map />
         <Testimonials />
-        <div className="px-[105px]">
+        <div className="px-5 lg:px-[105px]">
           <Logo />
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

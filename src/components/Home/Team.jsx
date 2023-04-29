@@ -5,10 +5,10 @@ function Team() {
   return (
     <>
       <div className="container mx-auto">
-        <h1 className="text-[46px] text-[#464646] font-[700] mb-6">
-          <span class="normal text-[46px] text-[#464646] font-[400]">Meet</span>{" "}
+        <h3 className="text-[46px] text-[#464646] font-[700] mb-6">
+          <span class="normal text-[46px] text-[#464646] font-[400]  font-sans">Meet</span>{" "}
           the Team
-        </h1>
+        </h3>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-7">
           <div className="col-span-1">
             <TeamCard />

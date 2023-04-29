@@ -15,7 +15,7 @@ function AboutTherapists() {
         <span class="normal text-[46px] text-[#464646] font-[400]">Our</span>{" "}
         Therapists
       </h1>
-      <div className="grid grid-cols-4 gap-7 py-5">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-7 py-5">
         <div className="col-span-1">
           <TeamCard />
         </div>

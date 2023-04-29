@@ -4,11 +4,12 @@ function TeamCard() {
   return (
     <>
       <div className="border-2 border-[rgba(50,50,50,.1)]">
-        <div class="relative">
+        <div class="relative w-full lg:h-44">
           <img
             src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682339432/slide8-1920x715_scsae2.jpg"
             alt="Your Image"
-            className="w-full h-44"
+            // className="w-full h-44"
+            style={{width:"100%" , height: "100%",objectFit:"cover" }}
           />
           <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:bg-[rgba(0,0,0,.4)] hover:opacity-100 hover:text-white hover:delay-100 transition-opacity duration-300">
           
@@ -61,7 +62,7 @@ function TeamCard() {
               Physical Therapist
             </h1>
           </div>
-          <div className="border border-t-[rgba(50,50,50,.1)] my-5 w-60 mx-auto"></div>
+          <div className="border border-t-[rgba(50,50,50,.1)] my-5 w-full lg:w-60 mx-auto"></div>
           <p className="text-[15px] text-[#999] ">
             Physical therapy is one of the major services which we offer. Our
             therapists works closely with patients to help them improve their

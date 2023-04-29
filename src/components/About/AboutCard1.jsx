@@ -4,7 +4,7 @@ function AboutCard1() {
   return (
     <>
       <div>
-        <div className="grid grid-cols-3 py-10 gap-7">
+        <div className="grid grid-cols-1 lg:grid-cols-3 py-10 gap-7">
           <div className="col-span-1">
             <div>
               <h1 className="text-[36px] text-[#464646] font-[700] my-4">

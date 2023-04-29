@@ -1,10 +1,11 @@
 import React from "react";
 
 function BlogCard1(props) {
-  const { height } = props;
+  const { height,width } = props;
   const { font } = props;
   const style = {
     height: height,
+    width:width,
   };
   const fontstyle = {
     fontSize: font,
@@ -17,7 +18,7 @@ function BlogCard1(props) {
             src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682339432/slide8-1920x715_scsae2.jpg"
             alt="Your Image"
             style={style}
-            // className= "`{props.height}`"
+            className= "w-full"
           />
           <div className="absolute  bottom-7 left-7 flex items-center justify-center text-white">
             <p className="text-[15px] font-[700] rounded-sm  bg-[#9a65a5] cursor-pointer w-32 p-1 text-center ">

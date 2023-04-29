@@ -21,17 +21,23 @@ function Footer() {
             <FooterCard2 />
           </div>
         </div>
-        <div className="bg-[#555A5F] text-[#909BA2] px-20">
-        <div className="flex justify-between align-middle items-center py-5">
-          <div className="text-[14px]">
-            © Copyright 2023 Physio WordPress Theme by{" "}
-            <span className="text-white font-[700] cursor-pointer">Qreativethemes</span>
-          </div>
-          <div className="text-[14px]">
-            Schedule your next <span className="text-white font-[700] cursor-pointer"> Appointment</span>
+        <div className="bg-[#555A5F] text-[#909BA2] px-2 lg:px-20">
+          <div className="flex flex-col lg:flex-row justify-between align-middle items-center py-5">
+            <div className="text-[14px] text-center">
+              © Copyright 2023 Physio WordPress Theme by{" "}
+              <span className="text-white font-[700] cursor-pointer">
+                Qreativethemes
+              </span>
+            </div>
+            <div className="text-[14px] text-center">
+              Schedule your next{" "}
+              <span className="text-white font-[700] cursor-pointer">
+                {" "}
+                Appointment
+              </span>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </>
   );

@@ -3,14 +3,14 @@ import React from 'react'
 function PhyCard() {
   return (
 <>
-<div className="flex justify-between  items-start gap-5 pb-5">
-              <div className="w-[50%]">
+<div className="flex flex-wrap justify-between  items-start gap-5 pb-5">
+              <div className="w-[100%] lg:w-[50%]">
                 <img
                   className="h-[50%] "
                   src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682583778/physio_03_1_obcuot.jpg"
                 ></img>
               </div>
-              <div className="w-[50%]">
+              <div className="w-[100%] lg:w-[50%]">
                 <h1 className="font-[700] text-[15px] text-[#56afdf] mb-4 ">
                   We provide Physical Therapy services
                 </h1>

@@ -4,11 +4,12 @@ function LatestCard() {
   return (
     <>
       <div className="">
-        <div class="relative">
+        <div class="relative w-full lg:h-36">
           <img
             src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682339432/slide8-1920x715_scsae2.jpg"
             alt="Your Image"
-            className="w-full h-36"
+            // className="w-full h-36"
+            style={{width:"100%" , height: "100%",objectFit:"cover" }}
           />
           <div className="absolute bottom-5 left-7 flex items-center justify-center text-white">
           <p className="text-[13px] font-[700] rounded-sm  bg-[#9a65a5] cursor-pointer w-32 p-1 text-center ">

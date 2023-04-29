@@ -15,6 +15,9 @@ function Hero() {
   return (
     <>
       <div className="">
+      <div className="lg:hidden visible">
+        <ContactCard />
+      </div>
         <div className="mt-12">
           <Swiper
             spaceBetween={0}
@@ -33,15 +36,16 @@ function Hero() {
                   <img
                     className=""
                     src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682339432/slide8-1920x715_scsae2.jpg"
+                    style={{width:"100%",height:"100%"}}
                   />
-                  <div className="absolute top-[35%] left-[8%] w-[550px]">
-                    <div className="text-[#56afd5] text-[15px] font-[700] shadow-[rgba(50,50,50,.1] my-4">
+                  <div className="lg:absolute bg-[rgba(37,37,62,0.67)] lg:bg-transparent top-[35%] left-[8%] w-full lg:w-[550px] py-4 lg:py-0 px-2 lg:px-0">
+                    <div className="text-[#56afd5] text-[Syne', sans-serif] text-[15px] font-[700] shadow-[rgba(50,50,50,.1] my-1 lg:my-4 tracking-[6px]">
                       COMMITTED TO HELPING
                     </div>
-                    <div className="text-[50px] font-[500] text-white leading-[60px]">
+                    <div className="text-[32px] lg:text-[50px] font-[700] text-white leading-9 lg:leading-[60px]">
                       We’ve been in business since 1996
                     </div>
-                    <div className="bg-[#a175aa] text-white text-[15.5px] font-[500] py-[11px] px-[25px] w-52 rounded-full mt-8">
+                    <div className="bg-[#a175aa] text-white text-[15.5px] font-[500] py-[11px] px-[25px] w-52 rounded-full my-5 lg:my-0 lg:mt-8">
                       Book Appointment
                     </div>
                   </div>
@@ -55,20 +59,21 @@ function Hero() {
                     className=""
                     src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682339431/slide_09-1920x715_m2iwof.jpg"
                   />
-                  <div className="absolute top-[35%] left-[8%] w-[550px]">
-                    <div className="text-[#56afd5] text-[15px] font-[700] shadow-[rgba(50,50,50,.1] my-4">
+                  <div className="lg:absolute  lg:bg-transparent top-[35%] left-[8%] w-full lg:w-[550px] py-4 lg:py-0 px-2 lg:px-0">
+                    <div className="text-[#56afd5] text-[Syne', sans-serif] text-[15px] font-[700] shadow-[rgba(50,50,50,.1] my-1 lg:my-4 tracking-[6px]">
                       COMMITTED TO HELPING
                     </div>
-                    <div className="text-[50px] font-[500] text-white leading-[60px]">
+                    <div className="text-[32px] lg:text-[50px] font-[700] text-white leading-9 lg:leading-[60px]">
                       We’ve been in business since 1996
                     </div>
-                    <div className="bg-[#a175aa] text-white text-[15.5px] font-[500] py-[11px] px-[25px] w-52 rounded-full mt-8">
+                    <div className="bg-[#a175aa] text-white text-[15.5px] font-[500] py-[11px] px-[25px] w-52 rounded-full my-5 lg:my-0 lg:mt-8">
                       Book Appointment
                     </div>
                   </div>
                 </div>
               </div>
             </SwiperSlide>
+         
             <SwiperSlide>
               <div>
                 <div className="relative">
@@ -76,14 +81,14 @@ function Hero() {
                     className=""
                     src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682339430/slide_005-1920x715_ty2cvk.jpg"
                   />
-                  <div className="absolute top-[35%] left-[8%] w-[550px]">
-                    <div className="text-[#56afd5] text-[15px] font-[700] shadow-[rgba(50,50,50,.1] my-4">
+                   <div className="lg:absolute  lg:bg-transparent top-[35%] left-[8%] w-full lg:w-[550px] py-4 lg:py-0 px-2 lg:px-0">
+                    <div className="text-[#56afd5] text-[Syne', sans-serif] text-[15px] font-[700] shadow-[rgba(50,50,50,.1] my-1 lg:my-4 tracking-[6px]">
                       COMMITTED TO HELPING
                     </div>
-                    <div className="text-[50px] font-[500] text-white leading-[60px]">
+                    <div className="text-[32px] lg:text-[50px] font-[700] text-white leading-9 lg:leading-[60px]">
                       We’ve been in business since 1996
                     </div>
-                    <div className="bg-[#a175aa] text-white text-[15.5px] font-[500] py-[11px] px-[25px] w-52 rounded-full mt-8">
+                    <div className="bg-[#a175aa] text-white text-[15.5px] font-[500] py-[11px] px-[25px] w-52 rounded-full my-5 lg:my-0 lg:mt-8">
                       Book Appointment
                     </div>
                   </div>
@@ -92,7 +97,7 @@ function Hero() {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="absolute w-full top-20 z-20 px-[55px]">
+        <div className="hidden lg:visible lg:absolute w-full top-20 z-20 px-[55px]  ">
           <ContactCard />
         </div>
       </div>

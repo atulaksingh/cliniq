@@ -9,10 +9,10 @@ function BlogPost() {
     <>
       <div>
         <Header />
-        <div className="px-[105px]">
+        <div className="px-5 lg:px-[105px]">
           <Title title="Blog" desc="Read all the news about our company" />
           <div className="grid grid-cols-12 py-10 gap-7">
-            <div className="col-span-9">
+            <div className="col-span-12 lg:col-span-9">
               <div class="relative bg-[#F5F8FB]">
                 <img
                   src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682339432/slide8-1920x715_scsae2.jpg"
@@ -107,43 +107,51 @@ function BlogPost() {
                     required=""
                   />
                   <div className="flex justify-between align-middle items-center">
-
-                 
-                  <p class="comment-form-author">
-                  <label className="text-[14px] font-[700] text-[#999] pb-5">
-                   Name *
-                  </label>{" "}
-                    <br />
-                     
-                   <input type="text"  className="border border-gray-200 p-2 text-[#999] overflow-hidden" />
-                  </p>
-                  <p class="comment-form-author">
-                  <label className="text-[14px] font-[700] text-[#999] pb-5">
-                   Email *
-                  </label>{" "}
-                    <br />
-                     
-                   <input type="text"  className="border border-gray-200 p-2 text-[#999] overflow-hidden" />
-                  </p>
-                  <p class="comment-form-author">
-                  <label className="text-[14px] font-[700] text-[#999] pb-5">
-                   Website 
-                  </label>{" "}
-                    <br />
-                     
-                   <input type="text"  className="border border-gray-200 p-2 text-[#999] overflow-hidden" />
-                  </p>
+                    <p class="comment-form-author">
+                      <label className="text-[14px] font-[700] text-[#999] pb-5">
+                        Name *
+                      </label>{" "}
+                      <br />
+                      <input
+                        type="text"
+                        className="border border-gray-200 p-2 text-[#999] overflow-hidden"
+                      />
+                    </p>
+                    <p class="comment-form-author">
+                      <label className="text-[14px] font-[700] text-[#999] pb-5">
+                        Email *
+                      </label>{" "}
+                      <br />
+                      <input
+                        type="text"
+                        className="border border-gray-200 p-2 text-[#999] overflow-hidden"
+                      />
+                    </p>
+                    <p class="comment-form-author">
+                      <label className="text-[14px] font-[700] text-[#999] pb-5">
+                        Website
+                      </label>{" "}
+                      <br />
+                      <input
+                        type="text"
+                        className="border border-gray-200 p-2 text-[#999] overflow-hidden"
+                      />
+                    </p>
                   </div>
                   <div className="flex gap-3 align-middle items-center my-5">
-                  <input type="checkbox" /> <p>Save my name, email, and website in this browser for the next time I comment.</p>
+                    <input type="checkbox" />{" "}
+                    <p>
+                      Save my name, email, and website in this browser for the
+                      next time I comment.
+                    </p>
                   </div>
                   <div className="bg-[#a175aa] w-40 text-white text-[15.5px] font-[500] py-[11px] px-[25px] rounded-full">
-             Post Comment
-            </div>
+                    Post Comment
+                  </div>
                 </form>
               </div>
             </div>
-            <div className="col-span-3">
+            <div className="col-span-12 lg:col-span-3">
               <BlogCard2 />
             </div>
           </div>

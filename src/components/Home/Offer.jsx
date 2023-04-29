@@ -5,10 +5,10 @@ function Offer() {
   return (
     <>
       <div className="container mx-auto">
-        <div className="grid grid-cols-1  lg:grid-cols-4 py-20 gap-10 ">
+        <div className="grid grid-cols-1  lg:grid-cols-4 py-10 lg:py-20 gap-10 lg:gap-7 ">
           <div className="col-span-1">
-            <h1 className="text-[37px] font-[600] leading-[40px] py-3">
-              <span className="text-[#464646] font-[400]"> We </span>offer
+            <h1 className="text-[37px] font-[600] leading-[40px] py-3 text-[#464646]">
+              <span className="text-[#464646d3] font-[400]"> We </span>offer
               various Physio Disciplines
             </h1>
             <p className="text-[15px] text-[#a5a5a5] leading-[23px] py-3">

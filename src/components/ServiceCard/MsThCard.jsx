@@ -10,7 +10,7 @@ function MsThCard() {
               src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682583778/physio_03_1_obcuot.jpg"
             ></img>
           </div>
-          <div className="w-96">
+          <div className="w-full">
             <h1 className="font-[700] text-[15px] text-[#56afdf] my-5 ">
               We provide Physical Therapy services
             </h1>

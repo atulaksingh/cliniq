@@ -5,7 +5,7 @@ function TestimonialCard() {
   return (
     <>
       <div>
-        <div className="bg-[#fff] pt-[30px] pr-[40px] pb-[35px] pl-[60px]  p-[30px 40px 35px 90px] text-[15px] shadow-sm rounded-md">
+        <div className="bg-[#fff] pt-[15px] pr-[20px] pb-[16px] pl-[25px] lg:pt-[30px] lg:pr-[40px] lg:pb-[35px] lg:pl-[60px]  p-[30px 40px 35px 90px] text-[15px] shadow-sm rounded-md">
           <div className="flex gap-4">
             <div>
               <RiDoubleQuotesL className="text-gray-300" size={40} />

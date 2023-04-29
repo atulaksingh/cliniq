@@ -10,11 +10,11 @@ function About() {
   return (
     <>
       <Header />
-      <div className="px-[55px]">
+      <div className="px-2 lg:px-[55px]">
 
       <ContactCard />
       </div>
-      <div className="px-[105px]">
+      <div className="px-5 lg:px-[105px]">
         <Title
           title="Abous Us"
           desc="We offer physical therapy services since 1996"

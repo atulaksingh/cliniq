@@ -11,7 +11,7 @@ function Title(props) {
               "url(https://res.cloudinary.com/dt0j68vdr/image/upload/v1682590104/about-us-bg_mxttrn.jpg)",
           }}
         >
-          <div className="text-[46px] text-[#464646] font-[600] pt-5">
+          <div className="text-[45px] leading-tight text-[#464646] font-[600] pt-5">
             {props.title}
           </div>
           <p className="text-[#999] text-[16px] font-[400]">{props.desc}</p>
