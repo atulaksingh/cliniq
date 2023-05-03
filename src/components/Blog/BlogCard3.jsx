@@ -1,16 +1,18 @@
-import React from "react";
+import React from 'react'
 
-function BlogCard1() {
-
+function BlogCard3(props) {
+    const { font } = props;
+    const fontstyle = {
+        fontSize: font,
+      };
   return (
-    <>
-      <div>
+    <div>
+       <div>
         <div class="relative bg-[#F5F8FB]">
           <img
             src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682339432/slide8-1920x715_scsae2.jpg"
             alt="Your Image"
-            // style={style}
-            className=" h-40 lg:h-96 w-full"
+            className=" h-40 lg:h-48 w-full"
           />
           <div className="absolute  bottom-7 left-7 flex items-center justify-center text-white">
             <p className="text-[15px] font-[700] rounded-sm  bg-[#9a65a5] cursor-pointer w-32 p-1 text-center ">
@@ -28,8 +30,8 @@ function BlogCard1() {
           <div className="border-b-2 border-gray-200 my-7"></div>
           <div>
             <h1
-              // style={fontstyle}
-              className="text-[22px] lg:text-[34px] font-[700] text-[#464646] hover:text-[#56afd5] cursor-pointer my-3"
+              style={fontstyle}
+              className=" font-[700] text-[#464646] hover:text-[#56afd5] cursor-pointer my-3"
             >
               Identifying And Treating Pain From Nerve Tension
             </h1>
@@ -46,8 +48,8 @@ function BlogCard1() {
           </div>
         </div>
       </div>
-    </>
-  );
+    </div>
+  )
 }
 
-export default BlogCard1;
+export default BlogCard3

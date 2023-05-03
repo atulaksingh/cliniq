@@ -37,6 +37,7 @@ function Hero() {
                     className=""
                     src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682339432/slide8-1920x715_scsae2.jpg"
                     style={{width:"100%",height:"100%"}}
+                    
                   />
                   <div className="lg:absolute bg-[rgba(37,37,62,0.67)] lg:bg-transparent top-[35%] left-[8%] w-full lg:w-[550px] py-4 lg:py-0 px-2 lg:px-0">
                     <div className="text-[#56afd5] text-[Syne', sans-serif] text-[15px] font-[700] shadow-[rgba(50,50,50,.1] my-1 lg:my-4 tracking-[6px]">
@@ -97,7 +98,7 @@ function Hero() {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="hidden lg:visible lg:absolute w-full top-20 z-20 px-[55px]  ">
+        <div className=" lg:block hidden lg:absolute w-full top-20 z-20 px-[55px]  ">
           <ContactCard />
         </div>
       </div>

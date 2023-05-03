@@ -4,7 +4,7 @@ function LatestCard() {
   return (
     <>
       <div className="">
-        <div class="relative w-full lg:h-36">
+        <div class="relative w-full h-40 lg:h-36">
           <img
             src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682339432/slide8-1920x715_scsae2.jpg"
             alt="Your Image"

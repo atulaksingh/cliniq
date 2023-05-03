@@ -10,6 +10,7 @@ function About() {
   return (
     <>
       <Header />
+      
       <div className="px-2 lg:px-[55px]">
 
       <ContactCard />

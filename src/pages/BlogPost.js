@@ -9,15 +9,17 @@ function BlogPost() {
     <>
       <div>
         <Header />
-        <div className="px-5 lg:px-[105px]">
+        <div className="container mx-auto">
+
+        <div className="px-5 lg:px-[73px]">
           <Title title="Blog" desc="Read all the news about our company" />
-          <div className="grid grid-cols-12 py-10 gap-7">
-            <div className="col-span-12 lg:col-span-9">
-              <div class="relative bg-[#F5F8FB]">
+          <div className="grid grid-cols-12 py-10 lg:gap-7">
+            <div className="col-span-12 lg:col-span-9 ">
+              <div class="relative bg-[#F5F8FB]  -z-10">
                 <img
                   src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682339432/slide8-1920x715_scsae2.jpg"
                   alt="Your Image"
-                  className="ḥ-96"
+                  className="h-48 lg:h-96"
                 />
                 <div className="absolute  bottom-7 left-7 flex items-center justify-center text-white">
                   <p className="text-[15px] font-[700] rounded-sm  bg-[#9a65a5] cursor-pointer w-32 p-1 text-center ">
@@ -106,7 +108,7 @@ function BlogPost() {
                     maxlength="65525"
                     required=""
                   />
-                  <div className="flex justify-between align-middle items-center">
+                  <div className="flex lg:flex-row flex-col justify-between align-middle items-center">
                     <p class="comment-form-author">
                       <label className="text-[14px] font-[700] text-[#999] pb-5">
                         Name *
@@ -114,19 +116,19 @@ function BlogPost() {
                       <br />
                       <input
                         type="text"
-                        className="border border-gray-200 p-2 text-[#999] overflow-hidden"
+                        className="border border-gray-200 p-2 w-72 lg:w-48 text-[#999] overflow-hidden"
                       />
                     </p>
-                    <p class="comment-form-author">
+                    <div className="lg:my-0 py-2">
                       <label className="text-[14px] font-[700] text-[#999] pb-5">
                         Email *
                       </label>{" "}
                       <br />
                       <input
                         type="text"
-                        className="border border-gray-200 p-2 text-[#999] overflow-hidden"
+                        className="border border-gray-200 p-2 w-72 lg:w-48 text-[#999] overflow-hidden"
                       />
-                    </p>
+                    </div>
                     <p class="comment-form-author">
                       <label className="text-[14px] font-[700] text-[#999] pb-5">
                         Website
@@ -134,7 +136,7 @@ function BlogPost() {
                       <br />
                       <input
                         type="text"
-                        className="border border-gray-200 p-2 text-[#999] overflow-hidden"
+                        className="border border-gray-200 p-2 w-72 lg:w-48 text-[#999] overflow-hidden"
                       />
                     </p>
                   </div>
@@ -145,7 +147,7 @@ function BlogPost() {
                       next time I comment.
                     </p>
                   </div>
-                  <div className="bg-[#a175aa] w-40 text-white text-[15.5px] font-[500] py-[11px] px-[25px] rounded-full">
+                  <div className="bg-[#a175aa] w-44 text-white text-[15.5px] font-[500] py-[11px] px-[25px] rounded-full">
                     Post Comment
                   </div>
                 </form>
@@ -155,6 +157,7 @@ function BlogPost() {
               <BlogCard2 />
             </div>
           </div>
+        </div>
         </div>
         <Footer />
       </div>

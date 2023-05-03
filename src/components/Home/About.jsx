@@ -41,13 +41,13 @@ function About() {
             </div>
           </div>
           <div className="col-span-1">
-            <h1 className="text-[46px] text-[#464646] font-[700]">
-              <span class="normal text-[46px] text-[#464646] font-[400]">
+            <h1 className="text-[30px] lg:text-[46px] text-[#464646] font-[700]">
+              <span class="normal text-[30px] leading-[56px] lg:leading-3 lg:text-[46px] text-[#464646] font-[400]">
                 Ask
               </span>{" "}
               a Question
             </h1>
-            <div className="p-[35px] bg-white">
+            <div className=" lg:p-[35px] bg-white">
               <form className="text-center">
                 <input
                   className="w-[87%] mt-5 md:w-[42%] bg-transparent p-3 border decoration-white mx-2"

@@ -4,7 +4,7 @@ function TeamCard() {
   return (
     <>
       <div className="border-2 border-[rgba(50,50,50,.1)]">
-        <div class="relative w-full lg:h-44">
+        <div class="relative w-full h-40 lg:h-44">
           <img
             src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682339432/slide8-1920x715_scsae2.jpg"
             alt="Your Image"

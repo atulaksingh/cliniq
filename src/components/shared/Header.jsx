@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SmHeader from "./SmHeader";
 
 function Header() {
   return (
     <>
-      <div className="">
+      <div className="hidden lg:block">
         <div className="flex justify-between align-middle items-center p-6 lg:mx-20">
-          <div>
+          <div className="">
             <img src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682338649/logo_zbkmuc.png"></img>
           </div>
-          <div className=" lg:visible">
+          <div className=" hidden lg:block">
             <div className="flex justify-end align-middle items-center gap-3 ">
               <Link to={"/"}>
                 <div className="text-[17px] font-[700] leading-[28px] text-[#828282] hover:text-[#56afd5] cursor-pointer">
@@ -152,6 +153,9 @@ function Header() {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <SmHeader />
       </div>
     </>
   );

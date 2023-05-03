@@ -14,14 +14,14 @@ function MassageTherapy() {
       <div>
         <Header />
         <div className="container mx-auto">
-          <div className="px-[24px]">
+          <div className="px-5 lg:px-[24px]">
             <ContactCard />
           </div>
-          <div className="px-[73px]">
+          <div className="px-5 lg:px-[73px]">
             <Title title="Massage Therapy" desc="" />
           </div>
-          <div className="grid grid-cols-12 px-[73px] py-10 gap-5">
-            <div className="col-span-9">
+          <div className="grid grid-cols-12 px-5 lg:px-[73px] py-10 gap-5">
+            <div className="col-span-12 lg:col-span-9">
               <p className="text-[16px] text-[#999] mb-5">
                 Massage therapy uses a variety of techniques to manipulate your
                 joints and soft tissue to improve your body’s overall health.
@@ -30,7 +30,7 @@ function MassageTherapy() {
                 Massage also accelerates your body's own natural ability to heal
                 itself.
               </p>
-              <div className="grid grid-cols-2 gap-8 py-12">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-12">
                 <div className="col-span-1">
                   <MsThCard />
                 </div>
@@ -39,7 +39,7 @@ function MassageTherapy() {
                 </div>
               </div>
             </div>
-            <div className="col-span-3">
+            <div className="col-span-12 lg:col-span-3">
               <OurServicesCard />
               <div className="bg-[#f5f8fb] py-[20px] px-[30px]">
                 <OpeningHours />

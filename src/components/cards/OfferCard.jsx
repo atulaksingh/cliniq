@@ -4,12 +4,13 @@ function OfferCard() {
   return (
     <>
       <div>
-        <div class="relative w-full lg:h-40">
+        <div class="relative w-full h-36 lg:h-40">
           <img
             src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682339432/slide8-1920x715_scsae2.jpg"
             alt="Your Image"
             // className="lg:h-[150px] "
             style={{width:"100%" , height: "100%",objectFit:"cover" }}
+            className="rounded-sm"
           />
 
           <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:bg-[rgba(0,0,0,.4)] hover:opacity-100 hover:text-white transition-opacity duration-300">

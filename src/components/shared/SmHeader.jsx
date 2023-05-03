@@ -1,69 +1,153 @@
-import React from 'react'
+import React, { useState } from "react";
+import Button from "./Button";
+import { Link } from "react-router-dom";
+import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
 
 function SmHeader() {
-    
+  let Links = [
+    { name: "Physical Therapy", link: "/services/physical-therapy" },
+    { name: "Massage Therapy", link: "/services/massage-therapy" },
+    { name: "Chiropractic Therapy", link: "/services/chiropractic-therapy" },
+    { name: "Work Injuries", link: "/services/work-injuries" },
+    { name: "Clinical Pilates", link: "/services/clinical-pilates" },
+    { name: "Sport Injuries", link: "/services/sport-injuries" },
+  ];
+  let BlogLinks = [
+    { name: "List Layout", link: "/blog" },
+    { name: "Grid Layout", link: "/blog/grid-layout" },
+    { name: "Blogpost", link: "/blog/blog-post" },
+  ];
+  let [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isserviceOpen, setServiceOpen] = useState(false);
+  const [isStart, setIsStart] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+    setServiceOpen(!isserviceOpen);
+  };
+  const servicetoggleDropdown = () => {
+    setServiceOpen(!isserviceOpen);
+  };
+
   return (
-  <>
-    <div>
-        
-<nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="#" className="flex items-center">
-        <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
-        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-    </a>
-    <button data-collapse-toggle="navbar-dropdown" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
-      <span className="sr-only">Open main menu</span>
-      <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-    </button>
-    <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-      <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="#" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
-        </li>
-        <li>
-            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown <svg className="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
-            
-
-
-
-
-            <div id="dropdownNavbar" className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                <ul className="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                  <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                  </li>
-                  <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                  </li>
-                  <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                  </li>
-                </ul>
-                <div className="py-1">
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
+    <>
+      <div className="lg:hidden block ">
+        <div className="flex flex-col lg:flex-row justify-between align-middle lg:items-center p-3 lg:p-6 lg:mx-20">
+          <div>
+            <img
+              className="w-48 lg:w-60"
+              src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682338649/logo_zbkmuc.png"
+            ></img>
+          </div>
+          <div
+            onClick={() => setOpen(!open)}
+            className="text-4xl absolute right-8 top-2 cursor-pointer md:hidden"
+          >
+            <ion-icon name={open ? "close" : "menu"}></ion-icon>
+          </div>
+          <div
+            className={` absolute md:static bg-white md:z-auto  w-[95%] md:w-auto  transition-all duration-500 ease-in ${
+              open ? "top-16 " : "top-[-600px]"
+            }`}
+          >
+            <div className="lg:my-0 w-full my-5 lg:bg-transparent bg-[#a175aa] p-4 ">
+              <div className="flex w-full flex-col lg:flex-row justify-start lg:justify-end align-middle items-start lg:items-center gap-3 ">
+                <div className=" w-full ">
+                  <Link to={"/"}>
+                    <button className="hover:bg-[#884d94e2] p-1 w-full flex items-center justify-between font-bold text-[17px] text-white tracking-wider border-4 border-transparent  active:text-white">
+                      Home
+                    </button>
+                  </Link>
                 </div>
+
+                <div className=" w-full ">
+                  <Link to={"/about"}>
+                    <button className="hover:bg-[#884d94e2] p-1 w-full flex items-center justify-between font-bold text-[17px] text-white tracking-wider border-4 border-transparent  active:text-white">
+                      About Us
+                    </button>
+                  </Link>
+                </div>
+
+                <div className="relative flex flex-col items-center w-full rounded-md">
+                  <div className="w-full">
+                    {/* <Link to={"/service"}> */}
+                    <button
+                      onClick={() => setIsStart((prev) => !prev)}
+                      className="hover:bg-[#884d94e2] p-1 w-full flex items-center justify-between font-bold text-[17px] text-white tracking-wider border-4 border-transparent  active:text-white"
+                    >
+                      {/* <Link></Link> */}
+                      Services
+                      {!isStart ? (
+                        <AiOutlineCaretDown className="h-8" />
+                      ) : (
+                        <AiOutlineCaretUp className="h-8" />
+                      )}
+                    </button>
+                    {/* </Link> */}
+                  </div>
+                  {/* rounded-t py-3.5 px-4  block whitespace-no-wrap font-[700] text-[14px] */}
+                  {isStart && (
+                    <div className="bg-[#a175aa]  absolute top-14 flex flex-col items-start rounded-sm p-2 w-full z-30">
+                      {Links.map((item, i) => (
+                        <div className="w-full">
+                          <Link to={item.link}>
+                            <div className="flex w-full p-2 justify-between hover:bg-[#884d94e2] text-white cursor-pointer rounded-r-lg border-l-transparent">
+                              <h3 className="font-bold">{item.name}</h3>
+                            </div>
+                          </Link>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                <div className="relative flex flex-col items-center w-full rounded-md">
+                  <button
+                    onClick={() => setIsOpen((prev) => !prev)}
+                    className="hover:bg-[#884d94e2] p-1 w-full flex items-center justify-between font-bold text-[17px] text-white tracking-wider border-4 border-transparent  active:text-white"
+                  >
+                    Blog
+                    {!isOpen ? (
+                      <AiOutlineCaretDown className="h-8" />
+                    ) : (
+                      <AiOutlineCaretUp className="h-8" />
+                    )}
+                  </button>
+                  {/* rounded-t py-3.5 px-4  block whitespace-no-wrap font-[700] text-[14px] */}
+                  {isOpen && (
+                    <div className="bg-[#a175aa]  absolute top-14 flex flex-col items-start rounded-sm p-2 w-full z-30">
+                      {BlogLinks.map((item, i) => (
+                        <div className="w-full">
+                          <Link to={item.link}>
+                            <div className="flex w-full p-2 justify-between hover:bg-[#884d94e2] text-white cursor-pointer rounded-r-lg border-l-transparent">
+                              <h3 className="font-bold">{item.name}</h3>
+                            </div>
+                          </Link>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                <div className=" w-full ">
+                  <Link to={"/contact"}>
+                    <button className="hover:bg-[#884d94e2] p-1 w-full flex items-center justify-between font-bold text-[17px] text-white tracking-wider border-4 border-transparent  active:text-white">
+                      content Us
+                    </button>
+                  </Link>
+                </div>
+
+                <div className="bg-[#a175aa] hidden lg:block text-white text-[15.5px] font-[500] py-[11px] px-[25px] rounded-full">
+                  Book Appointment
+                </div>
+              </div>
             </div>
-        </li>
-        <li>
-          <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-        </li>
-        <li>
-          <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-        </li>
-        <li>
-          <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-
-    </div>
-  </>
-  )
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default SmHeader
+export default SmHeader;

@@ -6,7 +6,7 @@ function Advantages() {
   return (
     <>
       <div className="container mx-auto py-10">
-      <h1 className="text-[46px] text-[#464646] font-[700] mb-5">
+      <h1 className="text-[35px] leading-[40px] lg:leading-[0px] lg:text-[46px] text-[#464646] font-[700] mb-5">
               <span class="normal text-[46px] text-[#464646] font-[400]">
               Our 
               </span>{" "}
