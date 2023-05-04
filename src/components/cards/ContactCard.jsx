@@ -14,7 +14,7 @@ function ContactCard() {
                 <FaHome size={40} color="" className="text-[#999999c2] hover:text-[#838383] transition-all delay-75" />
               </div>
               <div>
-                <div className="text-[#838383] text-[16px]">
+                <div className="text-[#838383] text-[16px] font-[700]">
                   Visit our Location
                 </div>
                 <p className="text-[#bfbfbf] text-[14px]">
@@ -27,7 +27,7 @@ function ContactCard() {
                 <MdWatchLater size={40} className="text-[#999999c2] hover:text-[#838383] transition-all delay-75" />
               </div>
               <div>
-                <div className="text-[#838383] text-[16px]">
+                <div className="text-[#838383] text-[16px] font-[700]">
                   Visit our Location
                 </div>
                 <p className="text-[#bfbfbf] text-[14px]">
@@ -40,7 +40,7 @@ function ContactCard() {
                 <IoMdCall size={40} className="text-[#999999c2] hover:text-[#838383] transition-all delay-75" />
               </div>
               <div>
-                <div className="text-[#838383] text-[16px]">
+                <div className="text-[#838383] text-[16px] font-[700]">
                   Visit our Location
                 </div>
                 <p className="text-[#bfbfbf] text-[14px]">
@@ -53,7 +53,7 @@ function ContactCard() {
                 <MdEmail size={40} className="text-[#999999c2] hover:text-[#838383] transition-all delay-75" />
               </div>
               <div>
-                <div className="text-[#838383] text-[16px]">
+                <div className="text-[#838383] text-[16px] font-[700]">
                   Visit our Location
                 </div>
                 <p className="text-[#bfbfbf] text-[14px]">

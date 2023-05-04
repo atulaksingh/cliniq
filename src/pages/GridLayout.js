@@ -9,7 +9,7 @@ import BlogCard3 from "../components/Blog/BlogCard3";
 function GridLayout() {
   return (
     <>
-      <div>
+      <div className="font-[Helvetica]">
         <Header />
         <div className="container mx-auto">
 

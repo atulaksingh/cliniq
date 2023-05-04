@@ -14,7 +14,7 @@ function PhyCard() {
           <h1 className="font-[700] text-[15px] text-[#56afdf] mb-4 ">
             We provide Physical Therapy services
           </h1>
-          <p className="text-[#999] text-[14px] font-[400] leading-[1.50rem]">
+          <p className="text-[#999] text-[15px] font-[400] leading-[24.5px]">
             Your personal physical therapy begins with a comprehensive
             evaluation of functional limitations and areas of pain. Our team of
             expert physical therapists will design a treatment plan based on
@@ -23,7 +23,7 @@ function PhyCard() {
             Throughout your treatment, we will work hard to help you return to
             all normal functional activities.
           </p>
-          <p className="text-[#999] text-[14px] font-[400] leading-[1.50rem]">
+          <p className="text-[#999] text-[14px] font-[400] leading-[24.5px]">
             When you are ready for discharge, you will receive a personalized
             home exercise program to allow you to stay healthy on the job,
             further enhance your rehabilitation.

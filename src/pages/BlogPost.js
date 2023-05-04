@@ -7,7 +7,7 @@ import BlogCard1 from "../components/Blog/BlogCard1";
 function BlogPost() {
   return (
     <>
-      <div>
+      <div className="font-[Helvetica]">
         <Header />
         <div className="container mx-auto">
 

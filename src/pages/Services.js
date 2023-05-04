@@ -8,7 +8,7 @@ import OfferCard from "../components/cards/OfferCard";
 function Services() {
   return (
     <>
-      <div>
+      <div className="font-[Helvetica]">
         <Header />
         <div className="px-2 lg:px-[55px]">
 

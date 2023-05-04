@@ -8,10 +8,10 @@ import Map from "../components/Home/Map";
 function Contact() {
   return (
     <>
-      <div>
+      <div className="font-[Helvetica]">
         <Header />
         <div className="container mx-auto">
-          <div className="px-3 lg:px-[105px]">
+          <div className="px-3 lg:px-[73px]">
             <Title title="Contact Us" desc="" />
             <div className="grid grid-cols-12 py-10 gap-2 lg:gap-10 ">
               <div className="col-span-12 lg:col-span-3 ">

@@ -4,7 +4,7 @@ function About() {
   return (
     <>
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 py-10 lg:py-20 bg-[#f5f8fb]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 py-10 lg:py-20 ">
           <div className="col-span-1">
             <h1 className="text-[46px] text-[#464646] font-[700]">
               <span class="normal text-[46px] text-[#464646] font-[400]">

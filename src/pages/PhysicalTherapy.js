@@ -11,7 +11,7 @@ import Footer from "../components/shared/Footer";
 function PhysicalTherapy() {
   return (
     <>
-      <div>
+      <div className="font-[Helvetica]">
         <Header />
         <div className="container mx-auto">
           <div className="px-5 lg:px-[24px]">

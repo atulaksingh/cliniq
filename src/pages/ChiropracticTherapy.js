@@ -10,7 +10,7 @@ import Footer from "../components/shared/Footer";
 function ChiropracticTherapy() {
   return (
     <>
-      <div>
+      <div className="text-[Helvetica]">
         <Header />
         <div className="container mx-auto">
           <div className="px-5 lg:px-[24px]">

@@ -11,7 +11,7 @@ function Title(props) {
               "url(https://res.cloudinary.com/dt0j68vdr/image/upload/v1682590104/about-us-bg_mxttrn.jpg)",
           }}
         >
-          <div className="text-[45px] leading-tight text-[#464646] font-[600] pt-5">
+          <div className="text-[45px] leading-tight text-[#464646] font-[600] pt-5 font-[Nunito]">
             {props.title}
           </div>
           <p className="text-[#999] text-[16px] font-[400]">{props.desc}</p>
@@ -33,7 +33,7 @@ function Title(props) {
                 <path d="M7.293 4.707L14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707z"></path>
               </svg>
             </div>
-            <div className="text-[14px] font-[700] text-[#9a65a5] my-3">
+            <div className="text-[14px] font-[700] text-[#9a65a5] my-3 font-[Open Sans]">
               {props.title}
             </div>
           </div>

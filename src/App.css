@@ -22,5 +22,7 @@ input::-webkit-inner-spin-button {
     
 }
 
-
+h1,h2,h3,h4,h5,h6,.main-navigation > li > a,.caption-heading-tag,.testimonials .testimonial--author,.call-to-action .call-to-action--content .call-to-action--title,.counter .counter--text .counter--number {
+    font-family: 'Nunito';
+}
 

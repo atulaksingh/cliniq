@@ -9,21 +9,26 @@ import AboutTherapists from "../components/About/AboutTherapists";
 function About() {
   return (
     <>
-      <Header />
+      <div className="font-[Helvetica]">
+        <Header />
+          <div className="px-2 lg:px-[55px]">
+            <ContactCard />
+          </div>
+        <div className="bg-[#f5f8fb]">
+        <div className="px-5 lg:px-[105px]">
+          <Title
+            title="Abous Us"
+            desc="We offer physical therapy services since 1996"
+          />
+          </div>
+        </div>
+        <div className="px-5 lg:px-[105px]">
       
-      <div className="px-2 lg:px-[55px]">
-
-      <ContactCard />
+          <AboutCard1 />
+          <AboutTherapists />
+        </div>
+        <Footer />
       </div>
-      <div className="px-5 lg:px-[105px]">
-        <Title
-          title="Abous Us"
-          desc="We offer physical therapy services since 1996"
-        />
-        <AboutCard1 />
-        <AboutTherapists />
-      </div>
-      <Footer />
     </>
   );
 }

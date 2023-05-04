@@ -5,14 +5,12 @@ import { faSuitcaseMedical } from "@fortawesome/free-solid-svg-icons";
 function Advantages() {
   return (
     <>
-      <div className="container mx-auto py-10">
-      <h1 className="text-[35px] leading-[40px] lg:leading-[0px] lg:text-[46px] text-[#464646] font-[700] mb-5">
-              <span class="normal text-[46px] text-[#464646] font-[400]">
-              Our 
-              </span>{" "}
-              Advantages
-            </h1>
-        <div className="grid col-span-12 lg:grid-cols-3 gap-7">
+      <div className="container mx-auto py-20">
+        <h1 className="text-[35px] leading-[40px] lg:leading-[0px] lg:text-[46px] text-[#464646] font-[700] pb-5">
+          <span class="normal text-[46px] text-[#464646] font-[400]">Our</span>{" "}
+          Advantages
+        </h1>
+        <div className="grid col-span-12 lg:grid-cols-3 gap-7 pt-10">
           <div className="col-span-1">
             <div className="parent  hero p-[25px] rounded-sm border border-[rgba(0,0,0,.08)] ">
               <div className="flex justify-start  align-middle items-center gap-4">

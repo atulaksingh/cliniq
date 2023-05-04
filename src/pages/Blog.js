@@ -9,7 +9,7 @@ import BlogCard2 from "../components/Blog/BlogCard2";
 function Blog() {
   return (
     <>
-      <div>
+      <div className="font-[Helvetica]">
         <Header />
         <div className="px-5 lg:px-[105px] ">
           <Title title="Blog" desc="Read all the news about our company" />

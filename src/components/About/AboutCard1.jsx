@@ -51,7 +51,7 @@ function AboutCard1() {
                   development of best business practices and promotion of
                   effective treatment methods will help us accomplish this.
                 </p>
-                <div className="font-[700] text-[#56afd5] text-[15px] py-5">
+                <div className="font-[700] text-[#56afd5] text-[15px] py-5 font-[Arial]">
                   High Quality
                 </div>
                 <p className="">

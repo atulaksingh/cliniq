@@ -147,7 +147,7 @@ function Header() {
                   content Us
                 </div>
               </Link>
-              <div className="bg-[#a175aa] text-white text-[15.5px] font-[500] py-[11px] px-[25px] rounded-full">
+              <div className="bg-[#a175aa] text-white font-[700] text-[13.5px] font-[500] py-[11px] px-[25px] rounded-full">
                 Book Appointment
               </div>
             </div>
