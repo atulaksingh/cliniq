@@ -5,7 +5,7 @@ import SmHeader from "./SmHeader";
 function Header() {
   return (
     <>
-      <div className="hidden lg:block">
+      <div className="hidden lg:block font-[Helvetica]">
         <div className="flex justify-between align-middle items-center p-6 lg:mx-20">
           <div className="">
             <img src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682338649/logo_zbkmuc.png"></img>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function BlogCard3(props) {
     const { font } = props;
@@ -8,7 +9,7 @@ function BlogCard3(props) {
   return (
     <div>
        <div>
-        <div class="relative bg-[#F5F8FB]">
+        <div class="relative bg-[#F5F8FB] -z-10">
           <img
             src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682339432/slide8-1920x715_scsae2.jpg"
             alt="Your Image"
@@ -42,9 +43,11 @@ function BlogCard3(props) {
             movement potential and gain a healthier and more...
           </p>
           <div className="flex justify-start align-middle items-center cursor-pointer mt-5">
+          <Link to={"/blog/blog-post"}>
             <div className="text-[15px] font-[700] text-[#56afd5] my-3">
               Read More
             </div>
+            </Link>
           </div>
         </div>
       </div>

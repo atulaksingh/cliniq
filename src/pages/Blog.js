@@ -14,7 +14,7 @@ function Blog() {
         <div className="px-5 lg:px-[105px] ">
           <Title title="Blog" desc="Read all the news about our company" />
           <div className="grid grid-cols-12 py-10 gap-5 lg:gap-7">
-            <div className="col-span-12 lg:col-span-9 -z-10">
+            <div className="col-span-12 lg:col-span-9 ">
               <BlogCard1  />
               <BlogCard1   />
             </div>
