@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function OfferCard() {
   return (
@@ -28,9 +29,13 @@ function OfferCard() {
           movement potential and gain a healthier and more...
         </p>
         <div className="flex justify-start align-middle items-center cursor-pointer">
+        <Link to={"/services/physical-therapy"}>
+
           <div className="text-[15px] font-[700] text-[#56afd5] my-3">
             Find out More
           </div>
+          </Link>
+
           <div>
             {" "}
             <svg

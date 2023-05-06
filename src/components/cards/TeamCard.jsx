@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function TeamCard() {
   return (
@@ -9,10 +10,9 @@ function TeamCard() {
             src="https://res.cloudinary.com/dt0j68vdr/image/upload/v1682339432/slide8-1920x715_scsae2.jpg"
             alt="Your Image"
             // className="w-full h-44"
-            style={{width:"100%" , height: "100%",objectFit:"cover" }}
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
           <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:bg-[rgba(0,0,0,.4)] hover:opacity-100 hover:text-white hover:delay-100 transition-opacity duration-300">
-          
             <div className="flex gap-2 justify-center my-5">
               <div className="relative bg-[rgba(0,0,0,.4)]  delay-100 hover:bg-[#56afd5] cursor-pointer   rounded-full  p-2 h-10 w-10 fill-white">
                 <svg
@@ -68,23 +68,25 @@ function TeamCard() {
             therapists works closely with patients to help them improve their
             movement potential and gain a healthier and more...
           </p>
-          <div className="flex justify-start align-middle items-center cursor-pointer">
-            <div className="text-[15px] font-[700] text-[#56afd5] my-3">
-              Find out More
+          <Link to={"/services/massage-therapy"}>
+            <div className="flex justify-start align-middle items-center cursor-pointer">
+              <div className="text-[15px] font-[700] text-[#56afd5] my-3">
+                Find out More
+              </div>
+              <div>
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  className="mt-1 fill-[#56afd5] "
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M7.293 4.707L14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707z"></path>
+                </svg>
+              </div>
             </div>
-            <div>
-              {" "}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="15"
-                height="15"
-                className="mt-1 fill-[#56afd5] "
-                viewBox="0 0 24 24"
-              >
-                <path d="M7.293 4.707L14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707z"></path>
-              </svg>
-            </div>
-          </div>
+          </Link>
         </div>
       </div>
     </>
